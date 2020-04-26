@@ -1,3 +1,5 @@
 # TwitEESC_Angular
 
-<p> Hello World  </p>
+<p> Finalização do Projeto Trainee - port para o framework Angular  </p>
+
+
