@@ -1,0 +1,16 @@
+mat-toolbar {
+    background: darkblue;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+.toolbar-separator {
+    flex: auto;
+}
+
+.routing-div a {
+    padding: 0px 15px;
+    font-size: 20px;
+}

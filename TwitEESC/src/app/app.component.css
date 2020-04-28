@@ -1,0 +1,39 @@
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content {
+    padding: 16px;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Manrope', sans-serif;
+}
+
+mat-sidenav-content {
+    display: flex;
+}
+
+.content-sep {
+    margin-left: 40px;
+    background: grey;
+    width: 100%;
+}
+mat-sidenav {
+    background-color: darkblue;
+    width: 200px;
+}
+
+
+.routing-container #nav-links {
+    display: flex;
+    flex-direction: column;
+    
+}
+.routing-container #nav-links a {
+    padding: 10px 0px;
+}
+.routing-container #nav-title {
+    margin-bottom: 150px;
+}
+
