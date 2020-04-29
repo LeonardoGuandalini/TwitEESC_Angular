@@ -1,28 +1,26 @@
-<div class="bemvindo"> 
-    <h1> Bem-Vindo ao TwittEESC </h1>
+<!-- If user is logged in -->
 
+<div class="nav-links" *ngIf="isLoggedIn$ | async">
+    <a mat-button routerLink="feed"> Feed </a>
+    <div class="separator"></div>
+    <a mat-button routerLink="perfil"> Perfil </a>
+    <div class="separator"></div>
+    <a mat-raised-button (click)="onLogOut()"> Logout </a>
 </div>
-<div class="caixa-icone">
-    <img class="icone" src="./assets/eescquilo.png" alt="Esquilo de óculos, logo do TwittEESC"/>
-</div>
-<form class="login-senha">
-    <label for="username"> Login: </label>
-    <input type="text" name="username" required>
 
-    <label for="senha"> Senha: </label>
-    <input type="password" name="senha" required>
 
-    
-    <input class="entrar" type="submit" value="Entrar" routerLink="../feed">
+<!-- If he ain't logged in -->
+
+<form class="user-enter" *ngIf="isLoggedOut$ | async">
+    <mat-form-field class="user-enter-field">
+        <mat-label> Username: </mat-label>
+        <input matInput placeholder="username">
+    </mat-form-field>
+    <div class="separator"> </div>
+    <mat-form-field class="user-enter-field">
+        <mat-label> Password: </mat-label>
+        <input matInput placeholder="password">
+    </mat-form-field>
+    <div class="separator"></div>
+    <input mat-button type="submit" value="Entrar" class="login-submit" (click)="onLogIn()">
 </form>
-
-
-<div class="outras-acoes">
-    
-    <a href="#"> Esqueci minha senha </a>
-    
-    <span>  |  </span>
-    
-    <a href="#"> Crie sua conta no TwittEESC </a>
-    
-</div>

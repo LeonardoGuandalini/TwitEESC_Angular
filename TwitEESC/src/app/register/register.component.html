@@ -1,1 +1,28 @@
-<p>register works!</p>
+
+<div class="container">
+    <h1 class="texto-registrar"> Por favor registre-se </h1>
+</div>
+<mat-card>
+    <mat-card-content>
+        <form class="login-senha">
+
+            <label for="email"> Email: </label>
+            <input type="email" name="email" required>
+
+            <label for="username"> Username: </label>
+            <input type="text" name="username" required>
+
+            <label for="senha"> Senha: </label>
+            <input type="password" name="senha" required id="senha">
+
+            <label for="senha-confirm"> Repita sua senha: </label>
+            <input type="password" name="senha-confirm" required id="senha-confirm"> 
+
+            
+            <input class="entrar" type="submit" value="Entrar" (click)="onLogIn()">
+            <div class="erro">
+                <span class="senha-incompativel"></span>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>

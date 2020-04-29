@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ToolbarControlService } from './toolbar-control.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { ToolbarControlService } from './toolbar-control.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isLoggedOut: boolean = false;
+  
   constructor() {
 
   }
