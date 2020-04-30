@@ -5,7 +5,7 @@
     <div class="separator"></div>
     <a mat-button routerLink="perfil"> Perfil </a>
     <div class="separator"></div>
-    <a mat-raised-button (click)="onLogOut()"> Logout </a>
+    <a mat-raised-button class="logout-button" (click)="onLogOut()"> Logout </a>
 </div>
 
 
@@ -22,5 +22,5 @@
         <input matInput placeholder="password">
     </mat-form-field>
     <div class="separator"></div>
-    <input mat-button type="submit" value="Entrar" class="login-submit" (click)="onLogIn()">
+    <button mat-raised-button (click)="onLogIn()"> Entrar </button>
 </form>

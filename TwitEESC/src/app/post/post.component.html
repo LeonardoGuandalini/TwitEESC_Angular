@@ -1,0 +1,14 @@
+<ul>
+    <li *ngFor="let tweet of tweets"> 
+        <mat-card>
+            <div class="author"> {{ tweet.author }}</div>
+            <div class="textcont"> {{ tweet.textcont }}</div>
+            <div class="date"> {{ tweet.date }}</div>
+            <div class="buttons"> 
+                <button mat-button (click)="likePost(tweet.id)" [ngClass]="tweet.isLiked ? 'success' : 'danger' "> Destacar </button>
+                <button mat-button (click)="deletePost(tweet.id)"> Excluir </button>
+            </div>
+        </mat-card>
+    </li>
+
+</ul>

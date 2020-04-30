@@ -20,6 +20,11 @@ a {
     
 }
 
+.logout-button {
+    color: white;
+    font-weight: bold;
+    background-color: crimson;
+}
 .separator {
     width: 50px;
 }

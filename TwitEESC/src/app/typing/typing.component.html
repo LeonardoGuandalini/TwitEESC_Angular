@@ -1,0 +1,5 @@
+<div class="container">
+    <textarea class="typing-area" maxlength="140" placeholder="Share your thoughts" data-ng-model="tweet.content" [(ngModel)]="tweetText"> </textarea> <span> {{tweetText.length + "/" + 140}}</span>
+    <div class="separator"></div>
+    <button mat-button class="submit-button" (click)="addPost()"> Enviar </button>
+</div>
