@@ -1,0 +1,27 @@
+img {
+    border: solid 5px black;
+}
+.container {
+    display: flex;
+}
+
+.name-div {
+    padding: 30px;
+    font-size: 20px;
+}
+
+.pre-stuff {
+    font-weight: bold;
+}
+
+
+.origin-div {
+    padding: 30px;
+    font-size: 20px;
+}
+
+.bio-div {
+    padding: 30px;
+    font-size: 20px;
+
+}

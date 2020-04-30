@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { TypingComponent } from './typing/typing.component';
 import { PostComponent } from './post/post.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { PostComponent } from './post/post.component';
     ToolbarComponent,
     TypingComponent,
     PostComponent,
+    PerfilComponent,
     
     
   ],
