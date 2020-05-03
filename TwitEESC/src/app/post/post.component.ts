@@ -13,20 +13,16 @@ export class PostComponent implements OnInit {
   
 
   likePost(id) {
-    function array_move(array, old_index, new_index) {
-      if (new_index >= array.length) {
-        let k = new_index - array.length + 1;
-        while (k--) {
-          array.push(undefined);
-        }
-      }
-      array.splice(new_index, 0, array.splice(old_index, 1)[0]);
-      
-    }
     let selectedPost = this.tweets.find(item => item.id === id);
-    array_move(this.tweets, id, 0);
+    let container = document.getElementById(id);
+    if (selectedPost.isLiked == true) {
+      container.classList.remove("isLiked");
+      selectedPost.isLiked = !selectedPost.isLiked;
+    } else {
+      container.classList.add("isLiked");
+      selectedPost.isLiked = !selectedPost.isLiked;
 
-    selectedPost.isLiked = !selectedPost.isLiked;
+    }
 
   }
 

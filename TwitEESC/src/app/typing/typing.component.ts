@@ -20,11 +20,34 @@ export class TypingComponent implements OnInit {
       id: idCount,
       author: "Leonardo",
       textcont: this.tweetText,
-      date: "today",
+      date: "hoje",
       isLiked: false,
-    } 
+    }
+
     this.tweets.unshift(newTweet);
     idCount +1;
+  }
+
+
+  sizeAlert() {
+    let span = document.getElementById("targetSpan");
+    if (this.tweetText.length > 0 && this.tweetText.length <= 80) {
+      span.classList.remove("largeTweet");
+      span.classList.remove("mediumTweet");
+      span.classList.add("shortTweet");
+    } 
+    if (this.tweetText.length > 80 && this.tweetText.length <= 120) {
+      span.classList.remove("shortTweet");
+      span.classList.remove("largeTweet");
+      span.classList.add("mediumTweet");
+    }
+    if(this.tweetText.length > 120 && this.tweetText.length <= 140) {
+      span.classList.remove("shortTweet");
+      span.classList.remove("mediumTweet");
+      span.classList.add("largeTweet");
+      
+    }
+
   }
   constructor() { }
 

@@ -1,6 +1,6 @@
 <ul>
     <li *ngFor="let tweet of tweets"> 
-        <mat-card>
+        <mat-card id="{{ tweet.id }}">
             <div class="author"> {{ tweet.author }}</div>
             <div class="textcont"> {{ tweet.textcont }}</div>
             <div class="date"> {{ tweet.date }}</div>

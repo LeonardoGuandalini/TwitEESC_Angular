@@ -16,3 +16,15 @@ textarea {
     height: 80px;
     width: 470px;
 }
+
+.shortTweet {
+    color: green;
+}
+
+.mediumTweet {
+    color:orange;
+}
+
+.largeTweet {
+    color: red;
+}

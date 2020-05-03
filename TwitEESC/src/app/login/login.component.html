@@ -13,13 +13,13 @@
 
 <form class="user-enter" *ngIf="isLoggedOut$ | async">
     <mat-form-field class="user-enter-field">
-        <mat-label> Username: </mat-label>
-        <input matInput placeholder="username">
+        <mat-label> Usuário: </mat-label>
+        <input matInput placeholder="Usuário">
     </mat-form-field>
     <div class="separator"> </div>
     <mat-form-field class="user-enter-field">
-        <mat-label> Password: </mat-label>
-        <input matInput placeholder="password">
+        <mat-label> Senha: </mat-label>
+        <input matInput placeholder="Senha">
     </mat-form-field>
     <div class="separator"></div>
     <button mat-raised-button (click)="onLogIn()"> Entrar </button>
