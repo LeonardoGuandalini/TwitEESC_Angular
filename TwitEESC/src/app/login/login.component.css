@@ -1,0 +1,35 @@
+.user-enter {
+    padding-left: 20px;
+    display:flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+}
+a {
+    font-size: 20px;
+} 
+
+.user-enter-form {
+    color:white;
+    background-color: white;
+    padding-left: 20px;
+    border: solid white 1px;
+    text-decoration: none;
+    
+}
+
+.logout-button {
+    color: white;
+    font-weight: bold;
+    background-color: crimson;
+}
+.separator {
+    width: 50px;
+}
+
+.login-submit {
+    height: 25px;
+    
+}

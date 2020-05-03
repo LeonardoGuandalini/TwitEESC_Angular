@@ -1,0 +1,26 @@
+<!-- If user is logged in -->
+
+<div class="nav-links" *ngIf="isLoggedIn$ | async">
+    <a mat-button routerLink="feed"> Feed </a>
+    <div class="separator"></div>
+    <a mat-button routerLink="perfil"> Perfil </a>
+    <div class="separator"></div>
+    <a mat-raised-button class="logout-button" (click)="onLogOut()"> Logout </a>
+</div>
+
+
+<!-- If he ain't logged in -->
+
+<form class="user-enter" *ngIf="isLoggedOut$ | async">
+    <mat-form-field class="user-enter-field">
+        <mat-label> Usuário: </mat-label>
+        <input matInput placeholder="Usuário">
+    </mat-form-field>
+    <div class="separator"> </div>
+    <mat-form-field class="user-enter-field">
+        <mat-label> Senha: </mat-label>
+        <input matInput placeholder="Senha">
+    </mat-form-field>
+    <div class="separator"></div>
+    <button mat-raised-button (click)="onLogIn()"> Entrar </button>
+</form>

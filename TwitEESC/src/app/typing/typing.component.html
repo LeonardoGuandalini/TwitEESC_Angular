@@ -1,0 +1,5 @@
+<div class="container">
+    <textarea class="typing-area" maxlength="140" placeholder="Digite algo" data-ng-model="tweet.content" (ngModelChange)="sizeAlert()" [(ngModel)]="tweetText"> </textarea> <span id="targetSpan"> {{tweetText.length + "/" + 140}}</span>
+    <div class="separator"></div>
+    <button mat-button class="submit-button" (click)="addPost()"> Enviar </button>
+</div>

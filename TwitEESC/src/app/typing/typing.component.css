@@ -1,0 +1,30 @@
+.container {
+    padding: 10px;
+    align-items: center;
+}
+
+.separator {
+    height: 5px;
+}
+
+button {
+    background: lightblue;
+    margin: 0 10px 5px 0;
+}
+
+textarea {
+    height: 80px;
+    width: 470px;
+}
+
+.shortTweet {
+    color: green;
+}
+
+.mediumTweet {
+    color:orange;
+}
+
+.largeTweet {
+    color: red;
+}
