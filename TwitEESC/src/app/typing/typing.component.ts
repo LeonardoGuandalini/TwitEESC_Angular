@@ -12,12 +12,12 @@ export class TypingComponent implements OnInit {
   @Input() tweetText: string = "";
   
   tweets=TWEETS;
-
+  idCount = 4;
   
   addPost() {
-    let idCount = 4;
+    
     const newTweet: tweet = {
-      id: idCount,
+      id: this.idCount,
       author: "Leonardo",
       textcont: this.tweetText,
       date: "hoje",
@@ -25,7 +25,7 @@ export class TypingComponent implements OnInit {
     }
 
     this.tweets.unshift(newTweet);
-    idCount +1;
+    this.idCount = this.idCount + 1;
   }
 
 
