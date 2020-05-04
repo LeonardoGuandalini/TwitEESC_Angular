@@ -19,6 +19,7 @@ li {
     margin: auto;
 }
 
+
 .author {
     font-size: 16px;
     padding-bottom: 20px;
@@ -26,8 +27,10 @@ li {
 }
 
 .textcont {
+    word-wrap: break-word;
     font-size: 14px;
     padding-bottom: 20px;
+
 }
 
 .date {
